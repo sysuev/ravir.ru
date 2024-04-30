@@ -1,0 +1,25 @@
+// Получаем ссылки на плашки
+const contactInfo = document.querySelector('.contact-info');
+const socialInfo = document.querySelector('.social-info');
+
+// Обработчик события для плашки контактной информации
+document.querySelector('.contact-link').addEventListener('mouseover', function() {
+    contactInfo.style.display = 'block';
+    socialInfo.style.display = 'none'; // Закрываем соц. плашку
+});
+
+// Обработчик события для плашки соц. сетей
+document.querySelector('.social-link').addEventListener('mouseover', function() {
+    socialInfo.style.display = 'block';
+    contactInfo.style.display = 'none'; // Закрываем контактную плашку
+});
+
+// Закрываем плашку контактной информации при уходе курсора
+contactInfo.addEventListener('mouseleave', function() {
+    contactInfo.style.display = 'none';
+});
+
+// Закрываем плашку соц. сетей при уходе курсора
+socialInfo.addEventListener('mouseleave', function() {
+    socialInfo.style.display = 'none';
+});

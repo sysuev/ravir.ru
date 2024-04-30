@@ -1,0 +1,19 @@
+/* Медиа-запросы для респонсивного дизайна */
+@media only screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    .nav-menu {
+        margin-top: 20px;
+    }
+    .nav-menu li {
+        display: block;
+        margin: 10px 0;
+    }
+    .main-content {
+        padding: 10px;
+    }
+    .slogan {
+        font-size: 20px;
+    }
+}
